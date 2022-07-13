@@ -7,8 +7,8 @@ pub enum Error {
     ItemMissing,
     LengthNotEnough,
     Encoding,
-    // Add customized errors here...
-    MyError,
+    WitnessArgsError,
+    RunExtensionScriptError,
 }
 
 impl From<SysError> for Error {
@@ -23,4 +23,3 @@ impl From<SysError> for Error {
         }
     }
 }
-
